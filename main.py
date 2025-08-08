@@ -24,6 +24,11 @@ async def main():
     """
     # Создаем экземпляр бота
     bot = Bot(token=API_TOKEN)
+
+    # Удаляем вебхук, если он был установлен
+    await bot.delete_webhook()
+    await asyncio.sleep(0.1)  # небольшая пауза для гарантии
+
     # Создаем экземпляр диспетчера
     dp = Dispatcher()
     
