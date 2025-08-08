@@ -1,0 +1,8 @@
+# Кеши Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# База данных
+quiz_bot.db
